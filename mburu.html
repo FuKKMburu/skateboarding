@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skateboarding Legends </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .history {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height:800px;
+            object-fit: cover;
+        }
+
+        .display {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .display img {
+            width: 200px;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Skateboarding Legends</h1>
+    
+</header>
+
+<div class="container">
+
+    <div class="history">
+        <h2>History of Skateboarding</h2>
+        <p>
+            Skateboarding began in the 1950s in California and Hawaii when surfers wanted something
+            to do when there were no waves. It started with simple homemade boards and later became
+            a global sport and culture with famous tricks like the ollie.
+        </p>
+    </div>
+
+    <div class="display">
+        <h2 id="displayName">WALL OF FAME</h2>
+        <img id="displayImage" src="" alt="">
+    </div>
+
+    <h2>Famous Skateboarders</h2>
+
+    <div class="gallery">
+        <div class="card" onclick="showSkater('Tony Hawk',"C:\Users\Administrator\Downloads\TONYHAWK.webp">
+            <img src="C:\Users\Administrator\Downloads\TONYHAWK.webp">
+            <p>Tony Hawk</p>
+			  <p class="description">A legendary skateboarder known for popularizing vert skating and being the first to land the 900 trick. He helped bring skateboarding into the mainstream.<p>
+        </div>
+        </div>
+
+        <div class="card" onclick="showSkater('Rodney Mullen',"C:\Users\Administrator\Downloads\RODNEYMULLEN.webp">
+            <img src="C:\Users\Administrator\Downloads\RODNEYMULLEN.webp">
+        <p class="description">Known as the Godfather of Street Skateboarding, he invented many modern skate tricks like the kickflip and heelflip.<p>
+            <p>Rodney Mullen</p>
+        </div>
+
+        <div class="card" onclick="showSkater('Nyjah Huston'"C:\Users\Administrator\Downloads\NYJAHHOUSTON.webp",>
+            <img src="C:\Users\Administrator\Downloads\NYJAHHOUSTON.webp"">
+            <p>Nyjah Huston</p>
+			            <p class="description">One of the most successful competitive skateboarders, famous for his consistency, technical skills, and multiple championship wins.<p>
+        </div>
+
+        <div class="card" onclick="showSkater('Paul Rodriguez',"C:\Users\Administrator\Downloads\paulrodriguez.webp">
+            <img src="C:\Users\Administrator\Downloads\paulrodriguez.webp">
+            <p>Paul Rodriguez</p>
+			<p class="description">A highly influential street skateboarder known for his smooth style and long-lasting professional career in competitions and video parts.<p>
+        </div>
+        </div>
+
+        <div class="card" onclick="showSkater('Bob Burnquist'"C:\Users\Administrator\Downloads\BOBBURNQUIST.webp",>
+            <img src="C:\Users\Administrator\Downloads\BOBBURNQUIST.webp">
+            <p>Bob Burnquist</p>
+		<p class="description">A pioneer of mega ramp skateboarding, famous for his creativity, big air tricks, and unique skating style.<p>
+        </div>
+
+        <div class="card" onclick="showSkater('Chris Cole',"C:\Users\Administrator\Downloads\CHRISCOLE.webp">
+            <img src="C:\Users\Administrator\Downloads\CHRISCOLE.webp">
+            <p>Chris Cole</p>
+			 <p class="description">A powerful street skater known for his strength, control, and multiple Street League Skateboarding championships.<p>
+        </div>
+
+        <div class="card" onclick="showSkater('Leticia Bufoni',"C:\Users\Administrator\Downloads\LUTICIABUFONI.webp">
+            <img src="C:\Users\Administrator\Downloads\LUTICIABUFONI.webp">
+            <p>Leticia Bufoni</p>
+			            <p class="description">A top female skateboarder who helped grow women<p>
+        </div>
+
+       
+
+        <div class="card" onclick="showSkater('Eric Koston','"C:\Users\Administrator\Downloads\erickoston.webp">
+	     
+		 <img src="C:\Users\Administrator\Downloads\erickoston.webp">
+            <p>Eric Koston</p>
+			 <p class="description">A versatile skateboarder respected for his creativity, technical ability, and major impact on modern street skateboarding culture.<p>
+        </div>
+        </div>
+
+    
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Skateboarding Legends</p>
+	<P>MburuKimani<p>
+</footer>
+
+<script>
+    function showSkater(name, image) {
+        document.getElementById('displayName').innerText = name;
+        document.getElementById('displayImage').src = image;
+    }
+</script>
+
+</body>
+</html>
